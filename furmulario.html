@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <div>
+        <fieldset class="first">
+            <legend>Preencha os dados a seguir</legend>
+            
+            <label for="nome" class="text-label">
+                Nome e sobrenome
+                <input type="text" class="text-padrao" id="nome" required placeholder="Seu nome">
+            </label>
+            
+            <label for="email" class="text-label">
+                E-mail
+                <input type="email" class="text-padrao" id="email" required placeholder="seuemail@seudominio.com">
+            </label>
+            
+            <label for="password" class="text-label">
+                Senha
+                <input type="password" class="text-padrao" id="password" required placeholder="***********">
+            </label>
+
+        </fieldset>
+        <fieldset class="localizacao">
+            <legend>Complete os seguintes dados</legend>
+            <label for="text-cidade" class="text-label">
+                Cidade
+                <input type="text" class="text-padrao" id="text-cidade" placeholder="Cidade" required>
+            </label>
+            <label for="text-pais" class="text-label">
+                País
+                <input type="text" class="text-padrao" id="text-pais" placeholder="País" required>
+            </label>
+            <label for="radio-sexo" class="radio-botoes">
+                <input type="radio" class="input-padrao" id="radio-sexo">
+                Homem
+            </label>
+            <label for="radio-sexo">
+                <input type="radio" class="input-padrao" id="radio-sexo">
+                Mulher
+            </label>
+            <label for="radio-sexo">
+                <input type="radio" class="input-padrao" id="radio-sexo">
+                Não especificar
+            </label>
+        </fieldset>
+
+        <fieldset class="mensagem">
+            <legend>Deseja enviar alguma sugestão?</legend>
+
+            <textarea name="text-mensagem" id="text-mensagem" cols="50" rows="5" placeholder="Escreva aqui sua mensagem..."></textarea>
+
+            <label for="checkbos-novidades">
+                <input type="checkbox" class="input-novidade" name="novidade" id="novidades" chacked>
+                Gostaria de receber novidades toda semana.
+            </label>
+        </fieldset>
+            <fieldset>
+                <legend class="plano">Qual plano contratar</legend>
+
+                <select name="inscricao" id="tipo-inscricao">
+                    <option value="Mensal" class="mensal">Mensal</option>
+                    <option value="Mensal" class="simestral">Simestral</option>
+                    <option value="Mensal" class="anual">Anual</option>
+                </select>
+
+                <label for="standard">
+                    <input type="radio" class="input-padrao" name="planos" id="standard">
+                    Plano Standard
+                </label>
+                <label for="crystal">
+                    <input type="radio" class="input-padrao" name="planos" id="crystal">
+                    Plano Crystal
+                </label>
+                <label for="diamond">
+                    <input type="radio" class="input-padrao" name="planos" id="diamond">
+                    Plano Diamond
+                </label>
+            </fieldset>
+    </div>
+    <input type="button" value="Conlcuir" class="submit">
+</body>
+</html>
